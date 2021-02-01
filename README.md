@@ -14,11 +14,30 @@ If you plan on using the real world networks they should be put in the notebooks
 # Installation instructions
 This software uses the graph tool library https://graph-tool.skewed.de/ which is relatively difficult to install on non linux operation systems (see https://git.skewed.de/count0/graph-tool/-/wikis/installation-instructions).
 After installing graph tool you can install this library like any other python package, depending packages are also installed along with it.
+
+### Installing conda
 ```
-git clone git@github.com:Feelx234/unnet.git
+wget https://repo.anaconda.com/archive/Anaconda3-2020.11-Linux-x86_64.sh
+chmod +rwx Anaconda3-2020.11-Linux-x86_64.sh
+bash Anaconda3-2020.11-Linux-x86_64.sh
+```
+Now reopen the command console.
+### Installing graph tool
+```
+conda create --name conda_unnet -c conda-forge python=3.8 graph-tool
+conda activate conda_unnet
+```
+### Installing unnet
+```
+git clone https://github.com/Feelx234/unnet.git
 pip install -e unnet
 ```
-The installation should only take a few minutes.
+The installation should take less than a minute.
+If you also want to run the demo notebooks please install `jupyter`
+```
+pip install jupyter
+```
+
 
 # System requirements
 The unnet package should run on any modern standard computer.
