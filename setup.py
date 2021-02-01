@@ -15,7 +15,7 @@ setup(
         'matplotlib',
 #        'graph-tool',
         'numba',
-        'tqdm'
+        'tqdm',
     ],
     tests_require=['pytest'],
     python_requires='>=3.6',
