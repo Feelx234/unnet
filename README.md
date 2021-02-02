@@ -8,7 +8,11 @@ In unnet we provide a network generator for the barabasi+ homophily model in `ge
 
 In the notebooks folder we have included several jupyter notebooks which can be executed to reproduce the experiments in a few minutes.
 In particular the notebook `submission_plots_BA.ipynb` can be run without the data.
-If you plan on using the real world networks they should be put in the notebooks folder as well (They are expected in `.csv` format, you can convert them using the provided `*.gexf` converter.
+If you plan on using the real world networks, the public available ones can be downloaded by executing 
+```
+python get_datasets.py
+```
+which stores them in the notebooks folder. You can then also run the `submission_plots_real.ipynb` notebook.
 
 
 # Installation instructions
