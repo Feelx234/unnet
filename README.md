@@ -49,7 +49,7 @@ The unnet package should run on any modern standard computer.
 ## Software requirements
 ### OS Requirements
 This package has been tested on *macOS* and *Linux*:
-+ macOS: Mojave (10.14.1)
++ macOS: Big Sur (11.1)
 + Linux: Ubuntu 20.04.1 LTS
 
 ### Python Dependencies
