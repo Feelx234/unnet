@@ -36,7 +36,10 @@ The installation should take less than a minute.
 If you also want to run the demo notebooks please install `jupyter`
 ```
 pip install jupyter
+python -m ipykernel install --user --name=conda_unnet
+python -m jupyter notebook
 ```
+Now inside your jupyter make sure you are using the conda_unnet kernel and you are good to go.
 
 
 # System requirements
