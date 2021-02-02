@@ -21,7 +21,7 @@ wget https://repo.anaconda.com/archive/Anaconda3-2020.11-Linux-x86_64.sh
 chmod +rwx Anaconda3-2020.11-Linux-x86_64.sh
 bash Anaconda3-2020.11-Linux-x86_64.sh
 ```
-Now reopen the command console.
+Now follow the installation instructions for anaconda. Afterwards reopen the console to make sure anaconda is active.
 ### Installing graph tool
 ```
 conda create --name conda_unnet -c conda-forge python=3.8 graph-tool
@@ -33,7 +33,7 @@ git clone https://github.com/Feelx234/unnet.git
 pip install -e unnet
 ```
 The installation should take less than a minute.
-If you also want to run the demo notebooks please install `jupyter`
+If you also want to run the demo notebooks please install `jupyter` as outlined below.
 ```
 pip install jupyter
 python -m ipykernel install --user --name=conda_unnet
