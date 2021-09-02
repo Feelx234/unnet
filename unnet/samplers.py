@@ -419,6 +419,8 @@ def log_agg_function(cent1, cent2):
     c2[c2<=0] = 0
     v=c1+c2
     v=(v - v.min()) / (v.max() - v.min())
+    assert np.all(v >= 0)
+    assert np.all(v <= 1)
     return v
 
 def log_agg_function_alpha(alpha, cent1, cent2):
@@ -426,7 +428,7 @@ def log_agg_function_alpha(alpha, cent1, cent2):
     to roughly get retain factors for BA use
     retain factor 0.1, 0.2, 0.3, 0.4, 0.5, 0.6,  0.7, 0.8, 0.9
     alpha         1.7, 1.0, 0.7, 0.5, 0.4, 0.26, 0.2, 0.1, 0.015 """
-    return log_agg_function(cent1, cent2) ** alpha
+    return np.clip(log_agg_function(cent1, cent2),10**-10,1) ** alpha
 
 
 
